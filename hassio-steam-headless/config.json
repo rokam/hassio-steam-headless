@@ -13,7 +13,7 @@
     "usb": true,
     "video": true,
     "audio": true,
-    "image": "josh5/steam-headless:latest",
+    "image": "josh5/steam-headless",
     "ports": {
         "8083/tcp": 8083
     },
