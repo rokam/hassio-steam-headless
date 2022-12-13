@@ -1,0 +1,50 @@
+{
+    "name": "Steam Headless",
+    "version": "dev",
+    "slug": "hassio-steam-headless",
+    "description": "Play your games in the browser with audio. Connect another device and use it with Steam Remote Play. Easily deploy a Steam Docker instance in seconds.",
+    "arch": ["amd64","i386"],
+    "url": "https://github.com/rokam/hassio-steam-headlesss",
+    "startup": "application",
+    "webui": "http://[HOST]:[PORT:8083]/",
+    "host_network": true,
+    "host_ipc": true,
+    "devices": [],
+    "usb": true,
+    "video": true,
+    "audio": true,
+    "image": "josh5/steam-headless:latest",
+    "ports": {
+        "8083/tcp": 8083
+    },
+    "ingress": true,
+    "ingress_port": 8083,
+    "ingress_entry": "/",
+    "options": {
+        "NAME": "SteamHeadless",
+        "USER_PASSWORD": "password",
+        "MODE": "primary"
+    },
+    "schema": {
+        "NAME": "str",
+        "USER_PASSWORD": "str",
+        "MODE": "list(primary|secondary)"
+    },
+    "environment":{
+        "TZ":"America/Sao_Paulo",
+        "USER_LOCALES":"en_US.UTF-8 UTF-8",
+        "DISPLAY":":55",
+        "SHM_SIZE":"2G",
+        "PUID":1000,
+        "PGID":1000,
+        "UMASK":"000",
+        "WEB_UI_MODE":"vnc",
+        "ENABLE_VNC_AUDIO":true,
+        "PORT_NOVNC_WEB":8083,
+        "NEKO_NAT1TO1":"",
+        "ENABLE_SUNSHINE":false,
+        "ENABLE_EVDEV_INPUTS":true,
+        "NVIDIA_DRIVER_CAPABILITIES":"all",
+        "NVIDIA_VISIBLE_DEVICES":"all"
+    }
+}
