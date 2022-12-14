@@ -1,6 +1,6 @@
 {
     "name": "Steam Headless",
-    "version": "dev",
+    "version": "latest",
     "slug": "hassio-steam-headless",
     "description": "Play your games in the browser with audio. Connect another device and use it with Steam Remote Play. Easily deploy a Steam Docker instance in seconds.",
     "arch": ["amd64","i386"],
