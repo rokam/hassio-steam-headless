@@ -14,8 +14,8 @@
         "SYS_RAWIO",
         "SYS_RESOURCE"
     ],
-    "devicetree": true,
     "devices": [
+        "/dev/uinput",
         "/dev/input/event0",
         "/dev/input/event1",
         "/dev/input/event2",
