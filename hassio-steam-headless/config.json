@@ -9,11 +9,6 @@
     "webui": "http://[HOST]:[PORT:8083]/",
     "host_network": true,
     "host_ipc": true,
-    "privileged": [
-        "SYS_ADMIN",
-        "SYS_RAWIO",
-        "SYS_RESOURCE"
-    ],
     "devices": [
         "/dev/uinput",
         "/dev/input/event0",
