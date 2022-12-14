@@ -14,6 +14,7 @@
         "SYS_RAWIO",
         "SYS_RESOURCE"
     ],
+    "devicetree": true,
     "devices": [
         "/dev/input/event0",
         "/dev/input/event1",
@@ -125,6 +126,6 @@
         "ENABLE_EVDEV_INPUTS":"true",
         "NVIDIA_DRIVER_CAPABILITIES":"all",
         "NVIDIA_VISIBLE_DEVICES":"all",
-        "USER_HOME":"/config/home"
+        "USER_HOME":"/config/SteamHeadless"
     }
 }
