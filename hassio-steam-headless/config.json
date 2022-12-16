@@ -10,6 +10,7 @@
     "host_network": true,
     "host_ipc": true,
     "apparmor": false,
+    "full_access": true,
     "privileged":[
         "NET_ADMIN",
         "SYS_ADMIN",
