@@ -9,6 +9,7 @@
     "webui": "http://[HOST]:[PORT:8083]/",
     "host_network": true,
     "host_ipc": true,
+    "apparmor": false,
     "devices": [
         "/dev/uinput",
         "/dev/input/event0",
